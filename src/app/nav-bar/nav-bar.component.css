@@ -1,0 +1,16 @@
+nav {
+    background: #999999;
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}

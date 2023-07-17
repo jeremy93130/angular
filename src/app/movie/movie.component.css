@@ -1,0 +1,19 @@
+.film {
+    display: flex;
+    align-items: center;
+}
+
+.film div:first-child {
+    width: 50%;
+    height: 500px;
+}
+.film div:last-child {
+    width: 50%;
+    margin: 0 0 0 40px;
+    text-align:center;
+}
+
+.film div img {
+    width: 100%;
+    height:100%
+}
