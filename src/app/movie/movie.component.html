@@ -1,9 +1,17 @@
 <div class="film">
-  <div>
-    <img [src]="urlImage" alt="oppenheimer" />
+  <div class="divImg">
+    <img [src]="movie.urlImage" alt="{{ movie.titre }}image" />
   </div>
-  <div>
-    <h2>{{ titre }}</h2>
-    <p>{{ description }}</p>
+  <div class="text">
+    <div>
+      <h2>{{ movie.titre }}</h2>
+      <p>{{ movie.description }}</p>
+    </div>
+    <div class="flex">
+      <span (click)="like()">
+        <i class="fa-regular fa-heart" style="color: #000000"></i>
+      </span>
+      <p>{{ movie.likes }} likes</p>
+    </div>
   </div>
 </div>
