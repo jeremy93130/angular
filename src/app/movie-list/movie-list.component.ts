@@ -10,5 +10,7 @@ import { MovieService } from '../movie-service';
 export class MovieListComponent {
   movies!: Movie[];
 
-  constructor(private serviceMovie: MovieService) {}
+  constructor(private serviceMovie: MovieService) {
+    this.movies = this.serviceMovie.movies;
+  }
 }

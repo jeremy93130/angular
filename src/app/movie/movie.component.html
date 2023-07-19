@@ -4,14 +4,18 @@
   </div>
   <div class="text">
     <div>
-      <h2>{{ movie.titre }}</h2>
+      <h2>{{ movie.titre | titlecase }}</h2>
       <p>{{ movie.description }}</p>
     </div>
     <div class="flex">
-      <span (click)="like()">
-        <i class="fa-regular fa-heart" style="color: #000000"></i>
+      <span [ngClass]="{ coeur: movie.clicked }" (click)="like()">
+        <i class="fa-regular fa-heart"></i>
       </span>
       <p>{{ movie.likes }} likes</p>
+      <span (click)="remove()" [ngStyle]="{ 'font-size': '30px' }"
+        ><i class="fa-solid fa-trash" style="color: #000000"></i
+      ></span>
     </div>
+    <p class="price">{{ movie.price | currency:'$'}}</p>
   </div>
 </div>

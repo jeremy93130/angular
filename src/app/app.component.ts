@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Movie } from './models/movie.model';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,5 @@ import { Movie } from './models/movie.model';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  titre = 'mon titre';
+ 
 }

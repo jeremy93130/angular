@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./mon-composant.component.css']
 })
 export class MonComposantComponent {
-
+laDate = new Date()
 }

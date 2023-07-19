@@ -1,9 +1,10 @@
 .film {
     display: flex;
     width: 600px;
-    height: 400px;
+    height: 450px;
     margin: 40px;
     border: 2px solid black;
+    background-color: rgb(104, 102, 102);
 }
 
 .divImg {
@@ -18,8 +19,9 @@
 .text {
     font-size: 13px;
     width: 50%;
-    margin: 20px;
+    margin: 10px 20px;
     height: 100%;
+    color: white;
 }
 
 .flex {
@@ -36,4 +38,17 @@ h2 {
     text-align: center;
     font-size: 30px;
     text-decoration: underline;
+}
+
+.coeur {
+    color: red;
+}
+
+.fa-solid{
+    margin-left: 150px;
+}
+
+.price {
+    text-align: center;
+    font-size: 40px;
 }
